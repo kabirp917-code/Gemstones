@@ -1,38 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore natural gemstone pendants by Aira Gemstone. Natural Beauty. Positive Energy.">
-  <meta name="theme-color" content="#0a0b0d"><title>Aira Gemstone | Natural Gemstone Pendants</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Aira Gemstone pendant collection. Natural Beauty. Positive Energy. Shop distinctive gemstone jewellery and order directly on WhatsApp.">
+  <meta name="theme-color" content="#090909">
+  <title>Aira Gemstone | Natural Beauty. Positive Energy.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
-    :root{--bg:#0a0b0d;--panel:#14161b;--gold:#e5b869;--gold-light:#f3cf8a;--white:#fff;--muted:#b0b5be;--line:rgba(229,184,105,.25)}
-    *{box-sizing:border-box;margin:0;padding:0}body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--white);line-height:1.65}
-    header{text-align:center;padding:48px 18px 34px;background:radial-gradient(circle at center,#1b1e25 0%,#0a0b0d 75%);border-bottom:1px solid var(--line)}
-    .brand{font:700 clamp(2rem,6vw,2.8rem) Cinzel,serif;letter-spacing:4px;color:var(--gold);text-transform:uppercase}.tagline{color:var(--muted);letter-spacing:2px;font-size:.88rem;text-transform:uppercase}.quote{color:var(--gold-light);font:italic 1rem Cinzel,serif;margin-top:10px}
-    .features{display:flex;justify-content:center;gap:14px 30px;flex-wrap:wrap;padding:15px 18px;background:#111317;border-bottom:1px solid rgba(255,255,255,.05);color:var(--muted);font-size:.84rem}.features span{display:flex;align-items:center;gap:8px}.features i{color:var(--gold)}
-    main{max-width:1100px;margin:auto;padding:48px 20px 72px}.intro{text-align:center;margin-bottom:34px}h2{font:600 clamp(1.55rem,4vw,2.1rem) Cinzel,serif;color:var(--gold);letter-spacing:1px}.intro p{color:var(--muted);font-size:.93rem;margin-top:7px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:850px;margin:auto}.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease}.card:hover{transform:translateY(-4px);border-color:var(--gold)}
-    .photo{position:relative;background:#0d0f12;height:350px}.photo img{width:100%;height:100%;object-fit:cover;display:block}.code{position:absolute;top:13px;left:13px;padding:5px 10px;border:1px solid var(--gold);border-radius:4px;background:rgba(10,11,13,.88);color:var(--gold);font-size:.72rem;letter-spacing:1px}
-    .details{padding:21px;display:flex;flex-direction:column;flex:1}.type{color:var(--gold);text-transform:uppercase;font-size:.72rem;letter-spacing:1.3px;font-weight:600}h3{font:600 1.2rem Cinzel,serif;margin:7px 0 8px}.price{color:var(--gold-light);font-size:1.4rem;font-weight:600;margin:2px 0 10px}.desc{color:var(--muted);font-size:.86rem;margin-bottom:18px;flex:1}
-    .order{display:flex;justify-content:center;align-items:center;gap:9px;width:100%;padding:12px 16px;border-radius:8px;text-decoration:none;background:#45484e;color:#e2e2e2;font-weight:600;font-size:.9rem;cursor:not-allowed}.notice{color:var(--muted);text-align:center;font-size:.78rem;margin:16px auto 0;max-width:650px}
-    footer{text-align:center;padding:32px 18px;background:#060708;border-top:1px solid var(--line);color:var(--muted);font-size:.83rem}footer strong{color:var(--gold);font-family:Cinzel,serif;letter-spacing:1px}
-    @media(max-width:650px){.grid{grid-template-columns:1fr;max-width:430px}main{padding:36px 15px 55px}.photo{height:330px}.features{gap:10px 18px}}
+    :root{--bg:#090909;--surface:#11110f;--surface2:#171613;--gold:#c9a45e;--gold2:#ead5a4;--text:#f7f3eb;--muted:#b8b1a4;--line:rgba(201,164,94,.28);--green:#25d366}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:82px}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit}
+    .topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold2),var(--gold),transparent)}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1160px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;letter-spacing:2px;color:var(--gold2);text-decoration:none;white-space:nowrap}
+    .navlinks{display:flex;align-items:center;gap:25px}.navlinks a{text-decoration:none;color:var(--muted);font-size:.83rem}.navlinks a:hover{color:var(--gold2)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--gold);border-radius:3px;padding:10px 16px;text-decoration:none;color:#17130b;background:linear-gradient(135deg,var(--gold2),var(--gold));font-weight:700;font-size:.82rem;transition:.2s}
+    .nav-cta:hover,.button:hover{filter:brightness(1.08);transform:translateY(-1px)}
+    .hero{min-height:510px;display:grid;place-items:center;text-align:center;padding:88px 20px 82px;background:radial-gradient(ellipse at 50% 42%,rgba(201,164,94,.14),transparent 52%),linear-gradient(180deg,#11100d,#090909 90%);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:'✧';position:absolute;color:rgba(201,164,94,.22);font-size:7rem}.hero:before{left:8%;top:16%}.hero:after{right:9%;bottom:12%;font-size:5rem}
+    .eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:.72rem;font-weight:700}
+    h1{font:600 clamp(3rem,8vw,5.7rem)/.98 'Cormorant Garamond',serif;letter-spacing:1px;margin:18px 0;color:var(--gold2)}
+    .hero p{max-width:610px;margin:0 auto 27px;color:var(--muted);font-size:1rem}
+    .hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.button.secondary{background:transparent;color:var(--gold2)}
+    .promise{display:flex;justify-content:center;gap:18px 42px;flex-wrap:wrap;padding:18px 20px;border-bottom:1px solid rgba(255,255,255,.07);background:#0d0d0c}
+    .promise span{color:var(--muted);font-size:.8rem}.promise i{color:var(--gold);margin-right:8px}
+    .section{max-width:1160px;margin:auto;padding:76px 22px}.section-head{text-align:center;margin-bottom:35px}.section-head .eyebrow{margin-bottom:7px}
+    h2{font:600 clamp(2.2rem,5vw,3.2rem)/1.05 'Cormorant Garamond',serif;color:var(--gold2)}
+    .section-head p{color:var(--muted);max-width:610px;margin:10px auto 0;font-size:.9rem}
+    .products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:900px;margin:auto}
+    .product{background:linear-gradient(145deg,#171613,#10100f);border:1px solid var(--line);overflow:hidden;transition:transform .25s,border-color .25s}
+    .product:hover{transform:translateY(-5px);border-color:var(--gold)}
+    .product-image{height:370px;position:relative;background:#0c0c0b;overflow:hidden}
+    .product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.product:hover .product-image img{transform:scale(1.035)}
+    .sku{position:absolute;left:14px;top:14px;padding:6px 10px;background:rgba(9,9,9,.86);border:1px solid var(--gold);color:var(--gold2);font-size:.68rem;letter-spacing:1.4px}
+    .product-info{padding:22px;display:flex;flex-direction:column;min-height:245px}.category{font-size:.68rem;text-transform:uppercase;letter-spacing:1.7px;color:var(--gold)}
+    h3{font:600 1.65rem/1.1 'Cormorant Garamond',serif;margin:7px 0}.price{font-size:1.25rem;font-weight:700;color:var(--gold2);margin:5px 0 9px}.description{font-size:.84rem;color:var(--muted);margin-bottom:20px;flex:1}
+    .order{display:flex;align-items:center;justify-content:center;gap:10px;background:#146c3a;color:white;text-decoration:none;padding:13px 15px;font-size:.84rem;font-weight:700;border-radius:3px;transition:background .2s}.order:hover{background:#198747}.order i{font-size:1.05rem}
+    .about-wrap{background:linear-gradient(110deg,#14120e,#0c0c0b);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .about{max-width:950px;margin:auto;padding:72px 22px;text-align:center}.about p{max-width:720px;margin:17px auto 0;color:var(--muted);font-size:.94rem}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;text-align:center}.value{padding:22px 15px;border:1px solid rgba(201,164,94,.2);background:rgba(255,255,255,.015)}.value i{color:var(--gold);font-size:1.35rem;margin-bottom:10px}.value h3{font-size:1.35rem}.value p{font-size:.78rem;margin-top:5px}
+    .contact{text-align:center;padding-top:65px;padding-bottom:70px}.contact p{color:var(--muted);margin:12px auto 22px;max-width:580px;font-size:.9rem}.contact .button{padding:13px 22px}
+    footer{border-top:1px solid var(--line);background:#060606;text-align:center;padding:30px 18px 25px;color:var(--muted);font-size:.78rem}footer .footlogo{font:700 1.7rem 'Cormorant Garamond',serif;letter-spacing:2px;color:var(--gold2);margin-bottom:4px}.footlinks{display:flex;justify-content:center;gap:20px;margin:13px 0}.footlinks a{text-decoration:none;color:var(--muted)}
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:30;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;text-decoration:none;font-size:1.7rem;box-shadow:0 5px 22px #0009}
+    @media(max-width:700px){.nav{padding:11px 15px}.logo{font-size:1.45rem}.navlinks{gap:12px}.navlinks a{font-size:.72rem}.nav-cta{padding:8px 10px;font-size:.72rem}.hero{min-height:460px;padding:75px 18px}.hero:before{left:-20px}.hero:after{right:-10px}.section{padding:58px 15px}.products{grid-template-columns:1fr;max-width:460px}.product-image{height:350px}.values{grid-template-columns:1fr;max-width:420px;margin:28px auto 0}.promise{gap:10px 20px}.promise span{font-size:.73rem}}
+    @media(max-width:390px){.navlinks{gap:8px}.navlinks a{font-size:.67rem}.nav-cta{font-size:.67rem;padding:7px 8px}.logo{font-size:1.3rem}}
   </style>
 </head>
 <body>
-  <header><div class="brand">Aira Gemstone</div><div class="tagline">Natural Beauty • Positive Energy</div><div class="quote">“Nature’s Art... For Your Life...”</div></header>
-  <div class="features" aria-label="Store highlights"><span><i class="fa-solid fa-gem"></i> Natural Gemstone Collection</span><span><i class="fa-solid fa-hand-sparkles"></i> Carefully Selected Pieces</span><span><i class="fa-brands fa-whatsapp"></i> Personal Order Assistance</span></div>
-  <main>
-    <section class="intro"><h2>Exclusive Gemstone Pendants</h2><p>Discover distinctive gemstone pendants from the Aira Gemstone collection.</p></section>
-    <section class="grid" aria-label="Gemstone pendant products">
-      <article class="card"><div class="photo"><span class="code">CODE: AG-001</span><img src="IMG-20261107-WA0201.jpg" alt="Natural Moss Agate oval pendant" loading="lazy"></div><div class="details"><div class="type">Natural Gemstone Pendant</div><h3>Natural Moss Agate Oval Pendant</h3><div class="price">₹499</div><p class="desc">An oval pendant featuring green, branch-like inclusions in a light stone, finished with a silver-tone setting.</p><a class="order" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%20want%20to%20order%20AG-001%20Natural%20Moss%20Agate%20Oval%20Pendant%20for%20%E2%82%B9499." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a></div></article>
-      <article class="card"><div class="photo"><span class="code">CODE: AG-002</span><img src="IMG-20261107-WA0207.jpg" alt="Black Onyx triangular pendant" loading="lazy"></div><div class="details"><div class="type">Natural Gemstone Pendant</div><h3>Black Onyx Pendant</h3><div class="price">₹499</div><p class="desc">A polished, deep-black triangular pendant with a sleek silver-tone setting. A simple statement piece for everyday styling.</p><a class="order" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%20want%20to%20order%20AG-002%20Black%20Onyx%20Pendant%20for%20%E2%82%B9499." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a></div></article>
+  <div class="topline"></div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#home">AIRA GEMSTONE</a>
+      <div class="navlinks"><a href="#collection">Collection</a><a href="#about">Our Story</a><a href="#contact">Contact</a></div>
+      <a class="nav-cta" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%27d%20like%20to%20know%20more%20about%20your%20collection." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">A thoughtful touch of nature</div>
+        <h1>Natural Beauty.<br>Positive Energy.</h1>
+        <p>Discover distinctive gemstone pendants, selected for their natural character and finished to complement your everyday style.</p>
+        <div class="hero-actions"><a class="button" href="#collection">Explore Collection <i class="fa-solid fa-arrow-down"></i></a><a class="button secondary" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20please%20share%20your%20collection%20details." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat with us</a></div>
+      </div>
     </section>
-    <p class="notice">For product details, availability and shipping information, please contact Aira Gemstone.</p>
+
+    <div class="promise"><span><i class="fa-regular fa-gem"></i> Distinctive gemstone pieces</span><span><i class="fa-solid fa-heart"></i> Thoughtfully selected</span><span><i class="fa-brands fa-whatsapp"></i> Easy WhatsApp ordering</span></div>
+
+    <section class="section" id="collection">
+      <div class="section-head"><div class="eyebrow">The Aira edit</div><h2>Featured Collection</h2><p>Explore our available pendant designs. Contact us on WhatsApp for current availability and delivery details.</p></div>
+      <div class="products">
+        <article class="product">
+          <div class="product-image"><span class="sku">AG-001</span><img src="IMG-20261107-WA0201.jpg" alt="Natural Moss Agate Oval Pendant" loading="lazy"></div>
+          <div class="product-info"><div class="category">Natural Gemstone Pendant</div><h3>Natural Moss Agate Oval Pendant</h3><div class="price">₹499</div><p class="description">An oval pendant with green, nature-inspired inclusions in a light stone and a silver-tone setting.</p><a class="order" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%20want%20to%20order%20AG-001%20Natural%20Moss%20Agate%20Oval%20Pendant%20for%20%E2%82%B9499." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order this pendant</a></div>
+        </article>
+        <article class="product">
+          <div class="product-image"><span class="sku">AG-002</span><img src="IMG-20261107-WA0207.jpg" alt="Black Onyx Pendant" loading="lazy"></div>
+          <div class="product-info"><div class="category">Natural Gemstone Pendant</div><h3>Black Onyx Pendant</h3><div class="price">₹499</div><p class="description">A polished deep-black pendant with a sleek silver-tone setting and a clean, understated look.</p><a class="order" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%20want%20to%20order%20AG-002%20Black%20Onyx%20Pendant%20for%20%E2%82%B9499." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order this pendant</a></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="about-wrap" id="about">
+      <section class="about">
+        <div class="eyebrow">A little about us</div><h2>The Aira Gemstone Story</h2>
+        <p>Aira Gemstone celebrates the natural character of gemstones through thoughtfully presented pendant designs. Our aim is to make discovering a piece you love simple, personal and welcoming. Browse the collection and message us directly for product details, availability and orders.</p>
+        <div class="values">
+          <div class="value"><i class="fa-solid fa-gem"></i><h3>Natural Character</h3><p>Every gemstone has its own distinctive look and pattern.</p></div>
+          <div class="value"><i class="fa-regular fa-handshake"></i><h3>Personal Assistance</h3><p>Speak with us directly for product and order enquiries.</p></div>
+          <div class="value"><i class="fa-solid fa-box-open"></i><h3>Order with Ease</h3><p>Send your selected pendant details through WhatsApp.</p></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section contact" id="contact">
+      <div class="eyebrow">We would love to hear from you</div><h2>Let’s Connect</h2>
+      <p>Have a question about a pendant, availability or delivery? Send Aira Gemstone a message and we’ll help with the details.</p>
+      <a class="button" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Contact on WhatsApp</a>
+    </section>
   </main>
-  <footer><p><strong>Aira Gemstone</strong></p><p>Natural Beauty. Positive Energy.</p><p>© <span id="year"></span> Aira Gemstone. All rights reserved.</p></footer>
+
+  <footer>
+    <div class="footlogo">AIRA GEMSTONE</div><div>Natural Beauty. Positive Energy.</div>
+    <div class="footlinks"><a href="#collection">Collection</a><a href="#about">Our Story</a><a href="#contact">Contact</a></div>
+    <div>© <span id="year"></span> Aira Gemstone. All rights reserved.</div>
+  </footer>
+  <a class="float-wa" href="https://wa.me/918890443076?text=Hello%20Aira%20Gemstone%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with Aira Gemstone on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+</body>
+</html>
